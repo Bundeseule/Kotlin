@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CharAndBoolean/CharAndBoolean.iml" filepath="$PROJECT_DIR$/CharAndBoolean/CharAndBoolean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Conditianal Statements/Conditianal Statements.iml" filepath="$PROJECT_DIR$/Conditianal Statements/Conditianal Statements.iml" />
       <module fileurl="file://$PROJECT_DIR$/FloatAndDouble/FloatAndDouble.iml" filepath="$PROJECT_DIR$/FloatAndDouble/FloatAndDouble.iml" />
       <module fileurl="file://$PROJECT_DIR$/HelloWorldStructure.iml" filepath="$PROJECT_DIR$/HelloWorldStructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Operators/Operators.iml" filepath="$PROJECT_DIR$/Operators/Operators.iml" />
     </modules>
   </component>
 </project>
