@@ -1,6 +1,14 @@
 fun main() {
     var text: String? = null
 
-    val text2:String? = text ?: "Some text"
-   println(text!!.length)
+
+    var text2 = ""
+
+    if (text != null) {
+        text2 = text
+
+    } else {
+        text2 ="This variable is null."
+    }
+    println(text2)
 }
