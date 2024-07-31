@@ -1,5 +1,6 @@
 fun main() {
     var text: String? = null
-    text="Some text"
+
+    val text2:String? = text ?: "Some text"
    println(text!!.length)
 }
