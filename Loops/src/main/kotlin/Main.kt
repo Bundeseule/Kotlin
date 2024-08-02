@@ -20,7 +20,16 @@ fun main() {
 //    }
 
     var number = 0
-    while (number < 10) println(number++)
+
+    while (number < 10) {
+        number++
+        //this will skip nr 7
+        if (number == 7) {
+            continue
+        }
+        print(number)
+
+    }
 
 
 }
