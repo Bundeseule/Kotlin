@@ -28,6 +28,7 @@ fun main() {
         var i = 0
 
         while(i<5){
+            if(i==0) break
             i++
             println("****$i")
         }
