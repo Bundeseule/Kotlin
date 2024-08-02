@@ -23,20 +23,14 @@ fun main() {
 
     while (number < 10) {
         number++
+        println(number)
 
-        //this will skip nr 7
-        if (number == 7) {
-            break
+        var i = 0
+
+        while(i<5){
+            i++
+            println("****$i")
         }
-        print(number)
-
-    }
-
-    for(i in 0 .. 10){
-        if(i == 7){
-            break
-        }
-        println(i)
     }
 
 
