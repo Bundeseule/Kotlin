@@ -25,8 +25,8 @@ fun main() {
         number++
 
         //this will skip nr 7
-        if (number >2 && number <8) {
-            continue
+        if (number == 7) {
+            break
         }
         print(number)
 
