@@ -32,6 +32,13 @@ fun main() {
 
     }
 
+    for(i in 0 .. 10){
+        if(i in 3..8){
+            continue
+        }
+        println(i)
+    }
+
 
 }
 
