@@ -1,6 +1,6 @@
 fun main(args: Array<String>) {
     val names = arrayOf("John", "Stephen", "Megan")
-    val numbers = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Name 1", "2")
+    val numbers = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Name 1", "2", 'a')
     println(" Frist Element: ${names[0]}")
 
     names[0] = "Alex"
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
     }
 
     for (i in numbers) {
-        if (i is Int) {
+        if (i is Char) {
             println(i)
         }
     }
