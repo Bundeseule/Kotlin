@@ -1,9 +1,6 @@
 fun main() {
-    val car1=Car()
-    car1.name = "Tesla"
-    car1.model ="S Plaid"
-    car1.color = "Red"
-    car1.doors = 4
+    val car1 = Car("Tesla", "S Plaid", "Red", 4)
+
 
     println("Name is ${car1.name}")
     println("Model is ${car1.model}")
@@ -13,7 +10,7 @@ fun main() {
     car1.move()
     car1.stop()
 
-    val car2=Car()
+    val car2 = Car()
     car2.name = "BMW"
     car2.model = "X5"
     car2.color = "Blue"
@@ -29,13 +26,13 @@ fun main() {
 
 }
 
-class Car {
-    var name = ""
-    var model = ""
-    var color = ""
-    var doors = 0
+class Car(name: String, model: String, color: String, doors: Int) {
+    var name = name
+    var model = model
+    var color = color
+    var doors = doors
 
-    fun move(){
+    fun move() {
         println("The car $name is moving...")
     }
 
@@ -43,3 +40,7 @@ class Car {
         println("The car $name has stopped")
     }
 }
+
+
+
+5:41:04
