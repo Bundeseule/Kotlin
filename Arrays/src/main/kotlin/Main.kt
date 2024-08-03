@@ -1,6 +1,6 @@
 fun main(args: Array<String>) {
     val names = arrayOf("John", "Stephen", "Megan")
-    val numbers = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Name 1", "2", 'a')
+    val mixedElements = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Name 1", "2", 'a')
     println(" First Element: ${names[0]}")
 
     names[0] = "Alex"
@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
         println(name)
     }
 
-    for (i in numbers) {
+    for (i in mixedElements) {
         if (i is String) {
             println(i)
         }
