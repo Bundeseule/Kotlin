@@ -1,10 +1,10 @@
 fun main(args: Array<String>) {
     val names = arrayOf("John", "Stephen", "Megan")
     val numbers = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "Name 1", "2", 'a')
-    println(" Frist Element: ${names[0]}")
+    println(" First Element: ${names[0]}")
 
     names[0] = "Alex"
-    println(" Frist Element: ${names[0]}")
+    println(" First Element: ${names[0]}")
 
     println("The size of the element is: ${names.size}")
 
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
     }
 
     for (i in numbers) {
-        if (i is Char) {
+        if (i is String) {
             println(i)
         }
     }
