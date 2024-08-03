@@ -12,6 +12,21 @@ fun main() {
 
     car1.move()
     car1.stop()
+
+    val car2=Car()
+    car2.name = "BMW"
+    car2.model = "X5"
+    car2.color = "Blue"
+    car2.doors = 5
+
+    println("\n")
+    println("Name is ${car2.name}")
+    println("Model is ${car2.model}")
+    println("Color is ${car2.color}")
+    println("Doors is ${car2.doors}")
+    car2.move()
+    car2.stop()
+
 }
 
 class Car {
