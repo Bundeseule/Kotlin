@@ -8,12 +8,14 @@ fun main(args: Array<String>) {
 
     println("The size of the element is: ${names.size}")
 
-    for(name in names) {
+    for (name in names) {
         println(name)
     }
 
-    for (i in numbers){
-        println(i)
+    for (i in numbers) {
+        if (i is Int) {
+            println(i)
+        }
     }
 
 }
