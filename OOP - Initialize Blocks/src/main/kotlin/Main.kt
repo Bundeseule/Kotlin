@@ -1,28 +1,22 @@
 fun main() {
-    val car1 = Car("Tesla   ", "S Plaid", "Red", 4)
-
-
-    println("Name is ${car1.name}")
-    println("Model is ${car1.model}")
-    println("Color is ${car1.color}")
-    println("Doors is ${car1.doors}")
-
-    car1.move()
-    car1.stop()
-
-    val car2 = Car("BMW", "X5", "Blue", 5)
-
-
-    println("\n")
-    println("Name is ${car2.name}")
-    println("Model is ${car2.model}")
-    println("Color is ${car2.color}")
-    println("Doors is ${car2.doors}")
-
-    car2.move()
-    car2.stop()
-
+    val user = User("Alex", "Dobinca", 23)
+    val friend = User("John","Smith", 30)
 }
+
+class User(name: String, var lastName: String, var age: Int) {
+    var name: String
+
+    init {
+        if(name.lowercase().startsWith("a")) {
+            this.name = name
+        }else{
+            this.name = "User"
+            println("The name does nt start with the letter 'a' or 'A'")
+        }
+    }
+}
+
+6:03:25
 
 
 
