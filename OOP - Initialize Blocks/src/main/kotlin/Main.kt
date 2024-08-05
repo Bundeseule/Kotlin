@@ -2,22 +2,20 @@ fun main() {
     val user = User("Alex")
     val friend = User("John","Smith")
 
-    println("Name: ${user.name}")
+    println("Name: ${user.firstName}")
     println("Age: ${user.age}")
     println("Age: ${user.age}")
 
     println("\n")
 
-    println("Name: ${friend.name}")
+    println("Name: ${friend.firstName}")
     println("LastName: ${friend.lastName}")
     println("Age: ${friend.age}")
 }
 
-class User(var name: String, var lastName: String, var age: Int) {
+class User(var firstName: String, var lastName: String = "LastName", var age: Int = 0) {
 
-    constructor(name: String): this(name, "LastName", 0)
 
-    constructor(name: String, lastName: String): this(name, lastName, 0)
 }
 
 
