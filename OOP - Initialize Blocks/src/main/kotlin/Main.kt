@@ -1,6 +1,6 @@
 fun main() {
     val user = User("Alex")
-    val friend = User("Andra")
+    val friend = User("John", "Smith")
 
     println("Name = ${user.name}")
     println("Name = ${user.lastName}")
