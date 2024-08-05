@@ -4,20 +4,30 @@ fun main() {
         firstName = "John",
         lastName = "Smith"
     )
-    val user2= User(age = 19, firstName = "Iona", lastName = "Berrington")
+    val user2 = User(age = 19, firstName = "Iona", lastName = "Berrington")
 
-    println("Name: ${user.firstName}")
-    println("Age: ${user.age}")
-    println("Age: ${user.age}")
+    user.firstName="Vlad"
+
+    println(user.firstName)
+    println(user.age)
+    println(user.age)
 
     println("\n")
 
-    println("Name: ${friend.firstName}")
-    println("LastName: ${friend.lastName}")
-    println("Age: ${friend.age}")
+    println(friend.firstName)
+    println(friend.lastName)
+    println(friend.age)
 }
 
-class User(var firstName: String, var lastName: String = "LastName", var age: Int = 0) {
+class User(firstName: String, var lastName: String = "LastName", var age: Int = 0) {
+    var firstName = firstName
+        get() {
+            return "FirstName:  $field"
+        }
+        set(value) {
+            println("$value was assigned to firstname property")
+           field=value
+        }
 
 
 }
