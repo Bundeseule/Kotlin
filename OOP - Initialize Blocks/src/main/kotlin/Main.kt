@@ -1,6 +1,10 @@
 fun main() {
     val user = User("Alex")
-    val friend = User("John","Smith")
+    val friend = User(
+        firstName = "John",
+        lastName = "Smith"
+    )
+    val user2= User(age = 19, firstName = "Iona", lastName = "Berrington")
 
     println("Name: ${user.firstName}")
     println("Age: ${user.age}")
