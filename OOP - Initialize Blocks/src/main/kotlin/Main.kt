@@ -1,22 +1,26 @@
 fun main() {
-    val user = User("Alex", "Dobinca", 23)
-    val friend = User("John","Smith", 30)
+    val user = User("Alex")
+    val friend = User("John","Smith")
+
+    println("Name: ${user.name}")
+    println("Age: ${user.age}")
+    println("Age: ${user.age}")
+
+    println("\n")
+
+    println("Name: ${friend.name}")
+    println("LastName: ${friend.lastName}")
+    println("Age: ${friend.age}")
 }
 
-class User(name: String, var lastName: String, var age: Int) {
-    var name: String
+class User(var name: String, var lastName: String, var age: Int) {
 
-    init {
-        if(name.lowercase().startsWith("a")) {
-            this.name = name
-        }else{
-            this.name = "User"
-            println("The name does nt start with the letter 'a' or 'A'")
-        }
-    }
+    constructor(name: String): this(name, "LastName", 0)
+
+    constructor(name: String, lastName: String): this(name, lastName, 0)
 }
 
-6:03:25
+
 
 
 
