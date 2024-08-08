@@ -1,11 +1,9 @@
 fun main() {
-    val user = User("Alex", "Dobbin",23)
+    val user = User("Alex")
 
-    //user.favoriteMovie="Interstellar"
-
-    println(user.favoriteMovie)
 }
 
-class User(var firstName: String, var lastName: String , var age: Int ) {
-    lateinit var favoriteMovie: String
+class User(firstName: String, var lastName: String = "LastName", var age: Int = 0) {
+    var firstName = firstName
+
 }
