@@ -6,7 +6,7 @@ fun main() {
     )
     val user2 = User(age = 19, firstName = "Iona", lastName = "Berrington")
 
-    user.firstName="Vlad"
+    user.firstName = "Vlad"
 
     println(user.firstName)
     println(user.age)
@@ -21,13 +21,20 @@ fun main() {
 
 class User(firstName: String, var lastName: String = "LastName", var age: Int = 0) {
     var firstName = firstName
-        get() {
+        get() {  // = field,   ist auch genug
             return "FirstName:  $field"
         }
         set(value) {
             println("$value was assigned to firstname property")
-           field=value
+            field = value
         }
 
+    fun getFirstName(): String {
+        return this.firstName
+    }
 
+    fun setFirstName(): String {
+        this.firstName = firstName
+        return firstName
+    }
 }
