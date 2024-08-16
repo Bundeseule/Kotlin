@@ -1,6 +1,7 @@
 fun main() {
     val calculator = Calculator()
-    calculator.sum(5,10)
+    val result: Int = calculator.sum(5,10)
+    println(result)
 
 }
 
