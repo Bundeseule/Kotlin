@@ -1,9 +1,12 @@
 fun main() {
-    val user = User("Alex")
+    val calculator = Calculator()
+    calculator.sum(5,10)
 
 }
 
-class User(firstName: String, var lastName: String = "LastName", var age: Int = 0) {
-    var firstName = firstName
+class Calculator(){
+    fun sum(a: Int, b: Int): Int {
+        return a + b
+    }
 
 }
