@@ -1,29 +1,10 @@
 fun main() {
-
-//    val instance = Database.getInstance()
-//    val instance2 = Database.getInstance()
-//    println(instance2)
-//    println(instance)
-    println(Database)
+    val user1 = User("Alex", "Dörgenklötsch", 24)
+    val user2 = User("Möringa", "Ulz", 21)
 }
 
-//class Database private constructor() {
-//
-//    companion object {
-//        private var instance: Database? = null
-//
-//        fun getInstance(): Database? {
-//            if (instance == null) {
-//                instance = Database()
-//            }
-//            return instance
-//        }
-//    }
-//}
-
-object Database {
+class User(var firstName: String, var lastName: String, var age: Int) {
     init {
-        println("Created Database")
+        println("User: $firstName was created")
     }
 }
-
