@@ -1,5 +1,7 @@
 fun main() {
 
+    val instance = Database.getInstance()
+    println(instance)
 }
 
 class Database private constructor() {
