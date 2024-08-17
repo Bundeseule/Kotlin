@@ -1,7 +1,7 @@
 fun main() {
-    for(direction in Direction.values()){
-        println(direction.direction)
-    }
+    println(Direction.NORTH.direction)
+    println(Direction.NORTH.distance)
+    println(Direction.NORTH.name)
 }
 
 enum class Direction(var direction: String, var distance:Int) {
