@@ -1,9 +1,12 @@
 fun main() {
-    println(Direction.NORTH.direction)
-    println(Direction.NORTH.distance)
-    println(Direction.NORTH.name)
+    val direction=Direction.valueOf("east".uppercase())
 
-    Direction.WEST.printData()
+    when(direction){
+        Direction.NORTH->{"The direction is North"}
+        Direction.WEST->{"The direction is West"}
+        Direction.SOUTH->{"The direction is South"}
+        Direction.EAST->{"The direction is East"}
+    }
 }
 
 enum class Direction(var direction: String, var distance:Int) {
