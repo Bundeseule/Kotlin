@@ -4,11 +4,16 @@ fun main() {
     alexAccount.withdraw(500)
     alexAccount.deposit(-20)
     alexAccount.withdraw(-100)
+
+    val balance = alexAccount.calculateBalance()
+    println("Balance: $balance")
+
+
 }
 
 class Account (val accountName: String){
-    var balance = 0
-    var transactions = mutableListOf<Int>()
+    private var balance = 0
+    private var transactions = mutableListOf<Int>()
 
     fun deposit(amount: Int){
         if(amount > 0){
