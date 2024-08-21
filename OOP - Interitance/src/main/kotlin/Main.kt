@@ -10,11 +10,11 @@ fun main() {
 }
 
 open class Vehicle(val name: String, val color: String){
-    fun move(){
+    open fun move(){
         println("$name is moving")
     }
 
-    fun stop(){
+    open fun stop(){
         println("$name is stopped")
     }
 }
@@ -24,5 +24,12 @@ class Car(name: String,color: String, val engines:Int, val doors: Int): Vehicle(
 }
 
 class Plane(name:String, color: String, val engines:Int,val doors: Int):Vehicle(name,color){
+    override fun move() {
+        flying()
+        super.move()
+    }
 
+    fun flying(){
+        println("The plane is flying")
+    }
 }

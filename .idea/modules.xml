@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AND OR/AND OR.iml" filepath="$PROJECT_DIR$/AND OR/AND OR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abstract Class/Abstract Class.iml" filepath="$PROJECT_DIR$/Abstract Class/Abstract Class.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArrayChallenge/ArrayChallenge.iml" filepath="$PROJECT_DIR$/ArrayChallenge/ArrayChallenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/CharAndBoolean/CharAndBoolean.iml" filepath="$PROJECT_DIR$/CharAndBoolean/CharAndBoolean.iml" />
@@ -23,9 +24,11 @@
       <module fileurl="file://$PROJECT_DIR$/OOP/OOP.iml" filepath="$PROJECT_DIR$/OOP/OOP.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP - Challenge/OOP - Challenge.iml" filepath="$PROJECT_DIR$/OOP - Challenge/OOP - Challenge.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP - Getter and Setter/OOP - Getter and Setter.iml" filepath="$PROJECT_DIR$/OOP - Getter and Setter/OOP - Getter and Setter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP - Inheritance 2/OOP - Inheritance 2.iml" filepath="$PROJECT_DIR$/OOP - Inheritance 2/OOP - Inheritance 2.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP - Initialize Blocks/OOP - Initialize Blocks.iml" filepath="$PROJECT_DIR$/OOP - Initialize Blocks/OOP - Initialize Blocks.iml" />
       <module fileurl="file://$PROJECT_DIR$/OOP - Interitance/OOP - Interitance.iml" filepath="$PROJECT_DIR$/OOP - Interitance/OOP - Interitance.iml" />
       <module fileurl="file://$PROJECT_DIR$/Operators/Operators.iml" filepath="$PROJECT_DIR$/Operators/Operators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sealed Class/Sealed Class.iml" filepath="$PROJECT_DIR$/Sealed Class/Sealed Class.iml" />
       <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
       <module fileurl="file://$PROJECT_DIR$/foreach/foreach.iml" filepath="$PROJECT_DIR$/foreach/foreach.iml" />
       <module fileurl="file://$PROJECT_DIR$/loop Challenge/loop Challenge.iml" filepath="$PROJECT_DIR$/loop Challenge/loop Challenge.iml" />
