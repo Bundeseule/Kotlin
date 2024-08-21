@@ -3,7 +3,8 @@ fun main() {
     val user2 = User("Alex","Dobin",23)
 
     println(user1.equals(user2))
-
+    println(user1)
+    println(user2)
 
 }
 
@@ -21,5 +22,9 @@ class User(var firstName: String, var lastName: String, var age: Int) {
 
     override fun hashCode(): Int {
         return 0
+    }
+
+    override fun toString(): String {
+        return "User(firstName=$firstName, lastName=$lastName, age=$age)"
     }
 }
