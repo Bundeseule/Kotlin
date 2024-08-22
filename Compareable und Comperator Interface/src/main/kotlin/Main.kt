@@ -10,6 +10,8 @@ fun main(args: Array<String>) {
     laptops.sortedBy { it.price }.forEach { println(it) }
     println("\n")
     laptops.sortedBy { it.ram }.forEach { println(it) }
+
+
 }
 
 data class Laptop(val brand: String, val year: Int, val ram: Int, val price: Int)
