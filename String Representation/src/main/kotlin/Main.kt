@@ -8,4 +8,6 @@ fun main(args: Array<String>) {
     println(numbersStrings.joinToString(separator = " | ", prefix = ":", postfix = ": end"))
     val numbers = (1 .. 100).toList()
     println(numbers.joinToString(limit = 15, truncated = "<...>"))
+
+    println(numbersStrings.joinToString{"Element:  ${it.uppercase()}"})
 }
