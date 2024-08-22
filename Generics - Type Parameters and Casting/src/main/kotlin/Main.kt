@@ -4,13 +4,16 @@ fun main(args: Array<String>) {
     val footballPlayer2 = FootballPlayer("Football Player 2")
 
     val baseballPlayer = FootballPlayer("Baseball Player 1")
-    val BaseballPlayer2 = FootballPlayer("Baseball Player 2")
+    val baseballPlayer2 = FootballPlayer("Baseball Player 2")
 
     val footballTeam = Team<FootballPlayer>("Football Team", mutableListOf(footballPlayer))
     footballTeam.addPlayers(footballPlayer2)
+
+    val baseballTeam = Team("Baseball Team", mutableListOf(baseballPlayer))
+    baseballTeam.addPlayers(baseballPlayer2)
 }
 
-class Team<T>(val name:String, val players:MutableList<T>){
+class Team<T: Player>(val name:String, val players:MutableList<T>){
     fun addPlayers(player: T){
         if(players.contains(player)) {
             println("Player: ${(player as Player).name} is already in the team ${this.name}.")
