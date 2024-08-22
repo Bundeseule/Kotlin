@@ -8,14 +8,16 @@ fun main(args: Array<String>) {
         Laptop("Apple", 2023, 16, 1000),
     )
 
-    laptops
+    laptops.sorted().forEach { println(it) }
 }
 
 data class Laptop(val brand: String, val year: Int, val ram: Int, val price: Int) : Comparable<Laptop> {
     override fun compareTo(other: Laptop): Int {
         return if (this.price > other.price) {
+            println("In if statement: Swapping ${this.brand} with ${other.brand}")
             1
         } else if (this.price < other.price) {
+            println("In if statement: Swapping ${this.brand} with ${other.brand}")
             -1
         } else {
             0
