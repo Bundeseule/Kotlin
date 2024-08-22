@@ -10,4 +10,9 @@ fun main(args: Array<String>) {
     println(numbers.drop(1))
     println(numbers.dropLast(5))
 
+    println("\n")
+    println(numbers.takeWhile { !it.startsWith("f") })
+    println(numbers.takeLastWhile { it != "three" })
+    println(numbers.dropWhile{it.length == 3})
+    println(numbers.dropLastWhile{it.contains("i")})
 }
