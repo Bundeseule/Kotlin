@@ -7,50 +7,9 @@ fun main(args: Array<String>) {
         Laptop("Acer", 2022, 8, 100),
         Laptop("Apple", 2023, 16, 1000),
     )
+    laptops.sortedWith(compareBy { it.price }).forEach { println(it) }
     println("\n")
-    laptops.sorted().forEach { println(it) }
-    println("\n")
-    laptops.sortedWith(ComparatorRam()).forEach { println(it) }
-    println("\n")
-    laptops.sortedWith(ComparatorYear()).forEach { println(it) }
+    laptops.sortedWith(compareBy { it.ram }).forEach { println(it) }
 }
 
-data class Laptop(val brand: String, val year: Int, val ram: Int, val price: Int) : Comparable<Laptop> {
-    override fun compareTo(other: Laptop): Int {
-        return if (this.price > other.price) {
-            println("In if statement: Swapping ${this.brand} with ${other.brand}")
-            1
-        } else if (this.price < other.price) {
-            println("In if statement: Swapping ${this.brand} with ${other.brand}")
-            -1
-        } else {
-            0
-        }
-
-    }
-}
-
-class ComparatorRam : Comparator<Laptop> {
-    override fun compare(laptop1: Laptop, laptop2: Laptop): Int {
-        return if (laptop1.ram > laptop2.ram) {
-            return 1
-        } else if (laptop1.ram < laptop2.ram) {
-            return -1
-        } else {
-            return 0
-        }
-    }
-}
-
-class ComparatorYear : Comparator<Laptop> {
-    override fun compare(laptop1: Laptop, laptop2: Laptop): Int {
-        return if (laptop1.year > laptop2.year) {
-            return 1
-        } else if (laptop1.year < laptop2.year) {
-            return -1
-        } else {
-            return 0
-        }
-    }
-
-}
+data class Laptop(val brand: String, val year: Int, val ram: Int, val price: Int)
