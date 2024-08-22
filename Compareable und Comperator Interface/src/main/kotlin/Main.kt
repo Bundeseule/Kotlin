@@ -7,9 +7,9 @@ fun main(args: Array<String>) {
         Laptop("Acer", 2022, 8, 100),
         Laptop("Apple", 2023, 16, 1000),
     )
-    laptops.sortedWith(compareBy { it.price }).forEach { println(it) }
+    laptops.sortedBy { it.price }.forEach { println(it) }
     println("\n")
-    laptops.sortedWith(compareBy { it.ram }).forEach { println(it) }
+    laptops.sortedBy { it.ram }.forEach { println(it) }
 }
 
 data class Laptop(val brand: String, val year: Int, val ram: Int, val price: Int)
