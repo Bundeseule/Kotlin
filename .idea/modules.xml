@@ -37,6 +37,7 @@
       <module fileurl="file://$PROJECT_DIR$/Operators/Operators.iml" filepath="$PROJECT_DIR$/Operators/Operators.iml" />
       <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
       <module fileurl="file://$PROJECT_DIR$/String Representation/String Representation.iml" filepath="$PROJECT_DIR$/String Representation/String Representation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test Predicates/Test Predicates.iml" filepath="$PROJECT_DIR$/Test Predicates/Test Predicates.iml" />
       <module fileurl="file://$PROJECT_DIR$/foreach/foreach.iml" filepath="$PROJECT_DIR$/foreach/foreach.iml" />
       <module fileurl="file://$PROJECT_DIR$/loop Challenge/loop Challenge.iml" filepath="$PROJECT_DIR$/loop Challenge/loop Challenge.iml" />
     </modules>
