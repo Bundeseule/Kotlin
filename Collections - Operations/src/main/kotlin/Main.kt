@@ -5,4 +5,11 @@ fun main(args: Array<String>) {
     val numbersMap = mapOf("key1" to 1, "key2" to 2, "key3" to 3, "key4" to 4, "key5" to 5)
     println(numbersMap.mapKeys{it.key.uppercase()})
     println(numbersMap.mapValues{it.value + it.key.length})
+
+
+    // Zipping
+    val colors = listOf("red", "green", "blue")
+    val animals=listOf("fox","bear","wolf")
+    println(colors.zip(animals))
+    println(colors.zip(animals){color, animal -> "The ${animal.replaceFirstChar { it.uppercase() }} is $color"})
 }
