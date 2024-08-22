@@ -16,10 +16,10 @@ fun main(args: Array<String>) {
 class Team<T: Player>(val name:String, val players:MutableList<T>){
     fun addPlayers(player: T){
         if(players.contains(player)) {
-            println("Player: ${(player as Player).name} is already in the team ${this.name}.")
+            println("Player: ${player.name} is already in the team ${this.name}.")
         }else{
             players.add(player)
-            println("Player: ${(player as Player).name} was added in the team ${this.name}.")
+            println("Player: ${player.name} was added in the team ${this.name}.")
         }
     }
 }
