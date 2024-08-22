@@ -8,5 +8,6 @@ fun main(args: Array<String>) {
     println(numbers.first{it.length>3})
     println(numbers.last{it.startsWith("f")})
     println(numbers.random())
+    println(numbers.isEmpty())
 
 }
