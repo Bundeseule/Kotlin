@@ -38,25 +38,4 @@ fun main(args: Array<String>) {
     )
 }
 
-private fun searchElement(searchedElement: Int, numbers: MutableList<Int>): Int {
-    var low = 0
-    var high = numbers.size - 1
-
-    var i = 0
-    while (low <= high) {
-        i++
-        println("Searched Number: $i")
-
-        val mid = (low + high) / 2
-        val cmp = numbers[mid].compareTo((searchedElement))
-
-        if (cmp < 0) low = mid + 1
-        else if (cmp > 0) {
-            low = mid - 1
-
-        } else {
-            return numbers[mid]
-        }
-    }
-    return -1
-}
+private fun searchElement(searchedElement: Int, numbers: MutableList<Int>) = numbers[numbers.binarySearch(27)]
