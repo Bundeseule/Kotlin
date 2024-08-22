@@ -2,44 +2,26 @@ import kotlin.reflect.KProperty
 import kotlin.properties.ReadWriteProperty
 
 fun main() {
-
-}
-
-class App: A by FirstDelegate(),B by SecondDelegate(){
-    override fun print() {
-        TODO("Not yet implemented")
+    val user = User()
+    with(user) {
+        firstName = "Alex"
+        lastName = "Peter"
     }
-
-    override fun print2() {
-        TODO("Not yet implemented")
+    with(user){
+        println("$firstName $lastName")
     }
 }
 
-interface A {
-    fun print()
+class User{
+    var firstName by FormatDelegate()
+    var lastName by FormatDelegate()
 }
 
-interface B {
-    fun print2()
-}
-
-open class FirstDelegate: A{
-    override fun print() {
-
-    }
-}
-
-open class SecondDelegate: B{
-    override fun print2() {
-
-    }
-}
-
-class FormatDelegate: ReadWriteProperty<Any?, String>{
+class FormatDelegate : ReadWriteProperty<Any?, String>{
     private var formattedString: String = ""
 
     override fun getValue(
-        this.Ref: Any?,
+        thisRef: Any?,
         property: KProperty<*>
     ): String {
         return formattedString
@@ -53,4 +35,6 @@ class FormatDelegate: ReadWriteProperty<Any?, String>{
     {
         formattedString = value.lowercase()
     }
+
+
 }
