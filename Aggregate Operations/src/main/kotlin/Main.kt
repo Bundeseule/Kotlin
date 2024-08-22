@@ -5,5 +5,5 @@ fun main(args: Array<String>) {
     println("The average is ${numbers.average()}")
     println("The max Value is ${numbers.maxOrNull()}")
     println("The min Value is ${numbers.minOrNull()}")
-
+    println("The sum is: ${numbers.sumOf{it*2}}")
 }
