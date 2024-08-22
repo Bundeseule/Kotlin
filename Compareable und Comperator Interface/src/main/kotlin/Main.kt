@@ -10,6 +10,8 @@ fun main(args: Array<String>) {
     laptops.sortedBy { it.price }.forEach { println(it) }
     println("\n")
     laptops.sortedBy { it.ram }.forEach { println(it) }
+    println("\n")
+    laptops.sortedWith(compareBy<Laptop>{it.year}.thenBy{it.price}).forEach { println(it) }
 
 
 }
