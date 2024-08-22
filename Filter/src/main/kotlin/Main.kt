@@ -11,4 +11,14 @@ fun main() {
     val filteredNot = numbers.filterNot {it.length <= 3}
     println(filteredIndex)
     println(filteredNot)
+
+    val mixedList = listOf(1,2,3,'A','B','C','D','E','F',"Alex","World Hello", false)
+    mixedList.filterIsInstance<Boolean>().forEach{
+        println(it)
+    }
+    //Partition
+    println("\n")
+    val (match, rest) = numbers.partition{it.length > 3}
+    println(match)
+    println(rest)
 }
