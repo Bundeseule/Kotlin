@@ -46,6 +46,10 @@
       <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
       <module fileurl="file://$PROJECT_DIR$/String Representation/String Representation.iml" filepath="$PROJECT_DIR$/String Representation/String Representation.iml" />
       <module fileurl="file://$PROJECT_DIR$/Test Predicates/Test Predicates.iml" filepath="$PROJECT_DIR$/Test Predicates/Test Predicates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threads/Threads.iml" filepath="$PROJECT_DIR$/Threads/Threads.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Threads-Coroutines.iml" filepath="$PROJECT_DIR$/Threads-Coroutines.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Threads-Coroutines.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Threads-Coroutines.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Threads-Coroutines.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Threads-Coroutines.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/foreach/foreach.iml" filepath="$PROJECT_DIR$/foreach/foreach.iml" />
       <module fileurl="file://$PROJECT_DIR$/loop Challenge/loop Challenge.iml" filepath="$PROJECT_DIR$/loop Challenge/loop Challenge.iml" />
     </modules>
